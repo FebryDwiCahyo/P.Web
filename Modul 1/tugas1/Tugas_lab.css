@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    background-image: url('gambar/White\ Simple\ Camera\ Photo\ Collage.png'); /* Pastikan jalur file sesuai */
+    background-position: center; /* Gambar terpusat di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak berulang */
+    background-size: cover; /* Gambar akan menutupi seluruh layar */
+}
+
+header {
+    background-color: #18324d;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.login-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #c0392b;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+footer {
+    background-color: #f1f1f1; 
+    padding: auto; /* Mengurangi padding agar lebih kecil */
+    text-align: center; 
+    border-top: 1px solid #ddd; 
+}
+
+.footer {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 10px 0; /* Mengurangi padding di dalam footer */
+}
+
+.footer-contack,
+.footer-contact {
+    flex: 1; 
+    min-width: 100px; /* Mengurangi lebar minimum */
+    margin: 5px; /* Mengurangi margin */
+    padding: 0; /* Mengurangi padding agar lebih ringkas */
+}
+
+.footer h2 {
+    font-size: 18px; /* Mengurangi ukuran font judul */
+    margin-bottom: 5px; /* Mengurangi margin bawah */
+}
+
+.footer p {
+    margin: 3px 0; /* Mengurangi margin teks */
+    color: #333; 
+    font-size: 14px; /* Mengurangi ukuran font */
+}
+
+.footer-contact ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 10px; /* Mengurangi jarak antar item */
+}
+
+.footer-contact a {
+    text-decoration: none; 
+    color: #007BFF; 
+    font-size: 18px; /* Mengurangi ukuran ikon media sosial */
+}
+
+.footer-contact a:hover {
+    color: #0056b3;
+}
+
+.footer-contact a.instagram {
+    color: #E1306C; 
+}
